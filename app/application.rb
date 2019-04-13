@@ -5,9 +5,10 @@ class Application
    after_noon_time = time.new()
    morning_time = time.new()
    
+   if morning_time < 12 
+     resp.write "Good Morning!"
    if after_noon_time > 12
-     
-   resp.write "Hello, World"
+     resp.write "Good Afternoon!"
    resp.finish
  end
  
