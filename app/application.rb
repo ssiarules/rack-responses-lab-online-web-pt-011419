@@ -2,7 +2,9 @@ class Application
  
  def call(env)
    resp = Rack::Response.new
-   after_noon = time.new()
+   after_noon_time = time.new()
+   morning_time = time.new()
+   
    resp.write "Hello, World"
    resp.finish
  end
